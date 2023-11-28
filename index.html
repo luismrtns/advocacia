@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Advocacia</title>
+</head>
+<body>
+  <header>
+    <div class="header-img">
+      <img src="img/logo-1 (1).png" alt="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#espec">Especialidades</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <h1>Sâmia Araújo</h1>
+    <p>A advogada <span>competente, responsável</span> e que sempre vai dar o máximo pelo seu caso.</p>
+    <img src="img/undraw_judge_katerina_limpitsouni_ny-1-q.svg" alt="">
+  </section>
+
+  <section class="especialidades maxWidth" id="espec">
+    <div class="espec-title">
+      <h2>Áreas atuantes</h2>
+    </div>
+    <div class="espec-cards">
+      <article class="card">
+        <h3><i class="bi bi-person-fill"></i> Crimes contra a pessoa</h3>
+        <p>Envolvem violações diretas à integridade física, psicológica ou moral de um indivíduo. Homicídio, lesão corporal, ameaça e sequestro são exemplos. O Direito Penal busca garantir a segurança e a dignidade das pessoas, responsabilizando aqueles que causam danos à vida ou à integridade de outros.</p>
+      </article>
+
+      <article class="card">
+        <h3><i class="bi bi-cash"></i> Crimes contra o patrimônio</h3>
+        <p>Engloba delitos que prejudicam bens materiais e financeiros. Roubo, furto, estelionato e dano ao patrimônio são exemplos. A legislação busca preservar a propriedade privada, punindo ações que ameacem ou prejudiquem o patrimônio alheio.</p>
+      </article>
+
+      <article class="card">
+        <h3><i class="bi bi-laptop"></i> Crimes Digitais</h3>
+        <p>Referem-se a atividades ilícitas que ocorrem no ambiente digital. Este campo abrange uma ampla variedade de delitos. Exemplos de cibercrimes incluem hacking, phishing, fraude online, disseminação de malware, crimes contra a propriedade intelectual e difamação online.</p>
+      </article>
+
+      <article class="card">
+        <h3><i class="bi bi-globe-americas"></i> Crimes ambientais</h3>
+        <p> Envolvem condutas prejudiciais ao meio ambiente, tais como poluição, desmatamento ilegal, tráfico de animais silvestres e descarte inadequado de resíduos. As leis nessa área visam proteger ecossistemas, recursos naturais e a saúde humana, impondo sanções para prevenir danos ambientais.</p>
+      </article>
+    </div>
+    <a href="#" class="btn">Saiba mais <i class="bi bi-box-arrow-up-right"></i></a>
+  </section>
+
+  <section class="sobre-nos">
+    <div class="maxWidth">
+      <h2>Excelência</h2>
+      <div class="sobre-wrapper">
+        <div class="sobre-title">
+          <h3>Sâmia Araújo <span>|</span> Advocacia</h3>
+        </div>
+        <div class="sobre-description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere doloremque et iste, excepturi unde eius veritatis repellendus quos corrupti voluptates ipsum animi aut impedit!</p>
+        </div>
+      </div>
+      <div class="sobre-content">
+        <article class="sobre-cards">
+          <!-- <div class="sobre-icon"></i></div> -->
+          <div class="sobre-p">
+            <i class="bi bi-lightbulb-fill"></i>
+            <h4>Inovação e Criatividade</h4>
+            <p>Transformamos as ideias em realidade, sempre oferecendo um serviço de excelência.</p>
+          </div>
+        </article>
+        <article class="sobre-cards">
+          <!-- <div class="sobre-icon"></div> -->
+          <div class="sobre-p">
+            <i class="bi bi-globe"></i>
+            <h4>Tecnologia de Ponta</h4>
+            <p>Sempre buscando novas tecnologias, oferecemos uma melhor experiência para o cliente.</p>
+          </div>
+        </article>
+        <article class="sobre-cards">
+          <!-- <div class="sobre-icon"></div> -->
+          <div class="sobre-p">
+            <i class="bi bi-people-fill"></i>
+            <h4>Profissionais Especializados</h4>
+            <p>Um escritório Full Service com advogados peritos em cada área.</p>
+          </div>
+        </article>
+        <article class="sobre-cards">
+          <!-- <div class="sobre-icon"></div> -->
+          <div class="sobre-p">
+            <i class="bi bi-chat-right-text-fill"></i>
+            <h4>Atendimento de Excelência</h4>
+            <p>Atendimento humanizado. Tudo pensado para melhor te atender, buscando um alto índice de satisfação.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="formulario" id="contatos">
+    <div class="maxWidth">
+      <h3>Entre em contato conosco <i class="bi bi-telephone-fill"></i></h3>
+      <form autocomplete="off">
+        <label for="inome"><i class="bi bi-person"></i> Nome</label>
+        <input type="text" name="nome" id="inome" required placeholder="Ex: Fulustiano da Silva">
+
+        <label for="iemail"><i class="bi bi-envelope"></i> E-mail</label>
+        <input type="email" name="email" id="iemail" required placeholder="seuemail@gmail.com">
+
+        <label for="msg"><i class="bi bi-chat-left-text"></i> Mensagem</label>
+        <textarea name="msg" id="msg" rows="7" placeholder="Conte-nos tudo" required maxlength="1000" minlength="20"></textarea>
+
+        <div class="btn-form">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </div>
+      </form>
+      <div class="img-form"><img src="img/logo-1 (1).png" alt=""></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="direitos">
+      <h2>Sâmia Araújo <span>|</span> Advocacia</h2>
+      <p>&copy;Todos os direitos reservados</p>
+    </div>
+    <p>telefone de contato: +85 4002-8922</p>
+    <div class="sociais">
+      <a href=""><i class="bi bi-instagram"></i></a>
+      <a href=""><i class="bi bi-linkedin"></i></a>
+      <a href=""><i class="bi bi-facebook"></i></a>
+    </div>
+  </footer>
+  <!-- Imagem de <a href="https://br.freepik.com/fotos-gratis/natureza-morta-com-a-balanca-da-justica_33123987.htm#query=advocacia&position=2&from_view=search&track=sph&uuid=8d0a95b0-d98f-4916-835f-f1244b7a0018">Freepik</a> -->
+</body>
+</html>
