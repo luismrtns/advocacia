@@ -195,7 +195,7 @@ span{
 .sobre-cards{
   display: flex;
   padding: 2rem 3rem;
-  background-color: color-mix(in srgb, white, var(--cor-1) 85%);
+  background-color: color-mix(in srgb, white, var(--cor-1) 90%);
   gap: 10px;
   margin-bottom: 2rem;
   border-radius: 5px;
