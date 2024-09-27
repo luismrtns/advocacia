@@ -4,25 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="estilos.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Advocacia</title>
 </head>
 <body>
-  <header>
+  <!-- <header>
     <div class="header-img">
       <img src="img/logo-1 (1).png" alt="logo">
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#espec">Especialidades</a></li>
-        <li><a href="#contatos">Contatos</a></li>
+    <nav id="nav-bar">
+      <ul id="nav-list">
+        <li><a href="#">Home <i class="bi bi-house-fill"></i></a></li>
+        <li><a href="#espec">Especialidades <i class="bi bi-star-fill"></i></a></li>
+        <li><a href="#contatos">Contatos <i class="bi bi-telephone-fill"></i></a></li>
       </ul>
+      <button class="mobile-btn">
+        <i class="bi bi-list"></i>
+      </button>
     </nav>
+
+     <div id="mobile-menu">
+       <ul id="menu-nav-list">
+        <li class="menu-nav-item"><a href="#home">Home <i class="bi bi-house-fill"></i></a></li>
+        <li class="menu-nav-item"><a href="#espec">Especialidades <i class="bi bi-star-fill"></i></a></li>
+        <li class="menu-nav-item"><a href="#contatos">Contatos <i class="bi bi-telephone-fill"></i></a></li>
+      </ul>
+    </div>
+  </header> -->
+
+  <header>
+    <nav id="navBar">
+      <img src="img/logo-1 (1).png" alt="">
+      <ul id="nav-list">
+        <li class="nav-item"><a href="#home">Início <i class="fa-solid fa-house"></i></a></li>
+        <li class="nav-item"><a href="#espec">Especialidades <i class="fa-solid fa-star"></i></a></li>
+        <li class="nav-item"><a href="#contatos">Contatos <i class="fa-solid fa-phone"></i></a></li>
+      </ul>
+      <button class="mobile-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobile-menu">
+       <ul id="menu-nav-list">
+        <li class="menu-nav-item"><a href="#home">Início <i class="fa-solid fa-house"></i></a></li>
+        <li class="menu-nav-item"><a href="#espec">Especialidades <i class="fa-solid fa-star"></i></a></li>
+        <li class="menu-nav-item"><a href="#contatos">Contatos <i class="fa-solid fa-phone"></i></a></li>
+      </ul>
+    </div>
   </header>
 
-  <section class="hero-banner">
+  <section class="hero-banner" id="home">
     <h1>Sâmia Araújo</h1>
     <p>A advogada <span>competente, responsável</span> e que sempre vai dar o máximo pelo seu caso.</p>
     <img src="img/undraw_judge_katerina_limpitsouni_ny-1-q.svg" alt="">

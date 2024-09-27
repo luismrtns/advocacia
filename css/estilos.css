@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
 }
 
 :root{
@@ -33,6 +34,9 @@
 
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+  overflow-x: hidden;
 }
 
 body{
@@ -46,9 +50,54 @@ body{
   max-width: 72.25em;
 }
 
+.mobile-btn, #mobile-menu{
+  display: none;
+}
+
+/* header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-1);
+  padding: 0 3rem;
+  position: sticky;
+  top: 0;
+}
+
+header img{
+  width: 110px;
+}
+
+#nav-bar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-list{
+  display: flex;
+  gap: 2rem;
+}
+
+#nav-list a{
+  color: white;
+  font-weight: 600;
+  transition: all .3s ease-out;
+}
+
+#nav-list a:hover{
+  font-size: 1.8rem;
+  color: var(--cor-2);
+
+} */
+
 header{
-  display: block;
-  text-align: center;
+  width: 100%;
+  padding: 0 3rem;
+  position: sticky;
+  top: 0;
   background-color: var(--cor-1);
 }
 
@@ -56,57 +105,90 @@ header img{
   width: 110px;
 }
 
-header nav ul{
-  list-style-type: none;
+#navBar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header nav a{
+#nav-logo{
+  font-size: 24px;
+  color: #e9a209;
+}
+
+#nav-list{
+  display: flex;
+  gap: 2.5rem;
+}
+
+#nav-list a{
+  color: white;
+  transition: all .2s ease-in;
+  font-weight: 500;
+}
+
+#nav-list a:hover{
   color: var(--cor-3);
-  font-weight: bold;
-  padding: 1.5rem;
-  display: block;
-
-  transition: all .2s;
-}
-
-header nav a:hover{
-  background-color: var(--cor-3);
-  color: var(--cor-1);
-}
-
-.hero-banner{
-   background-color: color-mix(in srgb, white, var(--cor-1) 10%);
-   text-align: center;
-}
-
-.hero-banner h1{
-  display: inline-block;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: 800;
-  border-left: 3px solid;
-  padding-left: 1rem;
-}
-
-.hero-banner p{
   font-size: 1.8rem;
 }
 
+.hero-banner{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/img/natureza-morta-com-a-balanca-da-justica.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 84vh;
+}
+
+.hero-banner h1{
+  margin-right: auto;
+  margin-top: 5em;
+  margin-bottom: 2.5rem;
+  margin-left: 3.4em;
+  color: var(--cor-1);
+  font-weight: 600;
+  border-left: 3px solid;
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+
+.hero-banner p{
+  width: 30%;
+  margin-right: auto;
+  margin-left: 3em;
+  font-size: 2em;
+}
+
+ .hero-banner span{
+    color: var(--cor-1);
+    font-weight: bold;
+  }
+
 .hero-banner img{
-  width: 250px;
+  display: none;
 }
 
 .especialidades{
-  background-color: color-mix(in srgb, white, var(--cor-1) 10%);
-  padding: 2.5rem;
   display: flex;
   flex-direction: column;
+  background-color: color-mix(in srgb, white, var(--cor-1) 10%);
+  padding: 2.5rem;
 }
 
-.especialidades h2{
+.especialidades .espec-title{
   color: var(--cor-1);
-  border-bottom: 2px solid;
-  margin-bottom: 2.5rem;
+  padding: 1.2rem 0 0 0;
+  border-bottom: 2px solid var(--cor-1);
+  margin: 3rem 0;
+}
+
+.espec-cards{
+  display: flex;
+  gap: 2rem;
 }
 
 .card{
@@ -117,12 +199,12 @@ header nav a:hover{
   border-radius: 5px;
   box-shadow: 4px 4px 0 var(--cor-1);
   width: 80%;
+  max-height: 500px;
 }
 
 .card:nth-child(even){
   background-color: var(--cor-1);
   color: white;
-  margin-left: 3rem;
 }
 
 .card:nth-child(even) p::first-letter{
@@ -143,7 +225,7 @@ header nav a:hover{
 }
 
 .especialidades a{
-  display: inline-block;
+  display: block;
   width: fit-content;
   padding: 1rem 3rem;
   border-radius: 5px;
@@ -189,6 +271,16 @@ span{
 .sobre-description{
   text-align: center;
   margin-bottom: 4rem;
+  font-size: 2.5rem;
+  width: 70%;
+  margin: auto;
+}
+
+.sobre-content{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .sobre-cards{
@@ -199,6 +291,7 @@ span{
   margin-bottom: 2rem;
   border-radius: 5px;
   border: 2px solid rgba(255, 255, 255, 0.411);
+  width: 80%;
 }
 
 .sobre-cards h4, .sobre-cards i{
@@ -206,17 +299,9 @@ span{
 }
 
 .sobre-cards i{
-  width: 100%;
+  width: fit-content;
   font-size: 2em;
 }
-
-/* .sobre-icon{
-  display: flex;
-  align-items: center;
-  font-size: 1.8em;
-  margin-right: 1.5rem;
-  width: 70%;
-} */
 
 .formulario{
   background-color: color-mix(in srgb, white, var(--cor-1) 95%);
@@ -234,7 +319,7 @@ span{
 form{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 45%;
   margin: auto;
 }
 
@@ -318,11 +403,13 @@ input:valid:focus, textarea:valid:focus{
 }
 
 footer{
-  background-color: var(--cor-1);
+  background-color: color-mix(in srgb, white, var(--cor-1) 85%);
   color: white;
   text-align: center;
   padding: 1rem 3rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 15px;
 }
